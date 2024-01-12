@@ -1,16 +1,20 @@
 # MaliciousWebBert
 A Malicious Web Page Dectection Project Based on BERT, with GUI
 
+Support uploading HTML files or inputting URLs to crawl page content
+
 一个基于BERT的恶意网页检测工具，带有GUI界面
 
-Made With
+支持上传HTML文件或输入URL爬取页面内容
+
+### Env
 - Python
 - PyTorch
 - Transformers
 - PyQT5
 
 ### Dataset
-2017 中国网络安全技术对抗赛《恶意网页分析》
+2017 中国网络安全技术对抗赛《恶意网页分析》(Incorporated)
 
 ### BERT Pretrain Model
 [Chinese-BERT-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)
