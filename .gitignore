@@ -1,6 +1,3 @@
-# 忽略项目的data\raw_data文件夹中的所有内容
-data/raw_data/*
-
 # 忽略项目的data\processed_data文件夹中的所有内容
 data/processed_data/*
 
