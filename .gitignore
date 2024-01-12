@@ -1,0 +1,11 @@
+# 忽略项目的data\raw_data文件夹中的所有内容
+data/raw_data/*
+
+# 忽略项目的data\processed_data文件夹中的所有内容
+data/processed_data/*
+
+# 忽略checkpoints文件夹中的所有内容
+checkpoints/*
+
+# 忽略model_hub\chinese_wwm_ext_pytorch文件夹中的所有内容
+model_hub/chinese_wwm_ext_pytorch/*
