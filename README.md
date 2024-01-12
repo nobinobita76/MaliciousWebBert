@@ -1,11 +1,11 @@
 # MaliciousWebBert
-A Malicious Web Page Dectection Project Based on BERT, with GUI
+A Malicious (Chinese) Web Page Dectection Project Based on BERT, with GUI
 
 Support uploading HTML files or inputting URLs to crawl page content
 
-一个基于BERT的恶意网页检测工具，带有GUI界面
+一个基于 BERT 的 (中文) 恶意网页检测工具，带有图形化界面
 
-支持上传HTML文件或输入URL爬取页面内容
+支持上传 HTML 文件或输入 URL 爬取页面内容
 
 ### Env
 - Python
