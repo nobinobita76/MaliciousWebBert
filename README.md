@@ -31,5 +31,5 @@ Support uploading HTML files or inputting URLs to crawl page content
 5. Predict with GUI
    
    ```
-   python main.py predict
+   python ui.py
    ```
