@@ -32,28 +32,28 @@ class MainWindow(QMainWindow):
         # 创建 HTML 检测标签页
         self.html_tab = QWidget()
         self.html_layout = QVBoxLayout(self.html_tab)
-        self.html_button = QPushButton("上传 HTML 文件")
+        self.html_button = QPushButton("Upload HTML file")
         self.html_button.clicked.connect(self.upload_file)
         self.html_layout.addWidget(self.html_button)
 
         # 创建 URL 检测标签页
         self.url_tab = QWidget()
         self.url_layout = QVBoxLayout(self.url_tab)
-        self.url_label = QLabel("请输入 URL:")
+        self.url_label = QLabel("Input URL:")
         self.url_input = QLineEdit()
         self.url_input.returnPressed.connect(self.process_url)
         self.url_layout.addWidget(self.url_label)
         self.url_layout.addWidget(self.url_input)
 
         # 将标签页添加到标签部件中
-        self.tab_widget.addTab(self.html_tab, "HTML 检测")
-        self.tab_widget.addTab(self.url_tab, "URL 检测")
+        self.tab_widget.addTab(self.html_tab, "HTML Detection")
+        self.tab_widget.addTab(self.url_tab, "URL Detection")
 
         # 创建一个文本框部件来显示返回值
         self.result_text = QTextEdit()
         self.result_text.setReadOnly(True)
 
-        self.banner_label = QLabel("2020211866 王子俊 企业工程实践")
+        self.banner_label = QLabel("Malicious Webpage Detection")
         # self.banner_label.setStyleSheet("font-size: 1px; font-weight: bold; color: #ff0000;")
         self.banner_label.setAlignment(QtCore.Qt.AlignCenter)  # 设置标签居中对齐
 
@@ -76,7 +76,7 @@ class MainWindow(QMainWindow):
 
     def upload_file(self):
         file_dialog = QFileDialog()
-        file_path, _ = file_dialog.getOpenFileName(self, '选择文件')
+        file_path, _ = file_dialog.getOpenFileName(self, 'Choose File')
         if file_path:
             result = process(mode='html', data=file_path)
             self.result_text.setText(result)
